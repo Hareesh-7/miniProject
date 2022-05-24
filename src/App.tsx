@@ -1,18 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Hii from './components/hii';
-import MainNavbar from './components/Navbar/Navbar';
-import Footer from './components/Footer';
-import MenuAppBar from './components/hii';
+import { BrowserRouter } from "react-router-dom";
+import { AppRoutes } from './components/AppRoutes';
+
 
 function App() {
   return (
     <div className="App">
-      {/* <Hii name="Hareesh" /> */}
-      <MainNavbar />
-      <MenuAppBar />
-      <Footer />
+      <BrowserRouter>
+        <div className="App">
+          <AppRoutes />
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
